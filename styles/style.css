@@ -1,0 +1,98 @@
+:root {
+    --color-primario: #FFFED3;
+    --color-secundario: #BBE9FF;
+    --color-texto: #B1AFFF;
+    --color-copiar: #FFE9D0;
+}
+
+/* Estilo básico para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-copiar);
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: var(--color-primario);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Estilo del título */
+.container h1 {
+    margin-bottom: 20px;
+    color: var(--color-texto);
+    font-size: 24px;
+}
+
+.git {
+    padding: 1%;
+    width: 10%;
+    align-items: center;
+}
+
+.personaje {
+    width: 50%;
+}
+
+/* Estilo para los textarea */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+/* Botones */
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: var(--color-texto);
+    color: var(--color-secundario);
+}
+
+/* Botón de copiar */
+#copyButton {
+    background-color: var(--color-texto);
+    color: var(--color-secundario);
+}
+
+#copyButton:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+}
+
+/* Estilo para el contenedor de los botones */
+button-container {
+    display: flex;
+    justify-content: space-between;
+}
